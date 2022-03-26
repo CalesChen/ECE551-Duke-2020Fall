@@ -1,0 +1,102 @@
+Grading at 09/09/2020:10:29:14.555308
+For commit ID b1f10599256168957ca26024068b868f641c1fda
+Grading at Wed Sep  9 06:29:13 EDT 2020
+**Testing broken implementation 10 **
+-------------------------------------
+
+Expected 0 while get 0 
+Expected 5 while get 5 
+Expected 5 while get 5 
+Expected 3 while get 3 
+Expected 1 while get 1 
+Expected 2 while get 1 
+-21474836482147483647
+
+**Testing broken implementation 11 **
+-------------------------------------
+
+Expected 0 while get 0 
+Expected 5 while get 6 
+112358
+
+**Testing broken implementation 1 **
+-------------------------------------
+
+Expected 0 while get 0 
+Expected 5 while get 6 
+112358
+
+**Testing broken implementation 2 **
+-------------------------------------
+
+Expected 0 while get 1 
+
+
+**Testing broken implementation 3 **
+-------------------------------------
+
+Expected 0 while get 0 
+Expected 5 while get 6 
+112358
+
+**Testing broken implementation 4 **
+-------------------------------------
+
+Expected 0 while get 1 
+
+
+**Testing broken implementation 5 **
+-------------------------------------
+
+Expected 0 while get 0 
+Expected 5 while get 5 
+Expected 5 while get 5 
+Expected 3 while get 3 
+Expected 1 while get 1 
+Expected 2 while get 3 
+-21474836482147483647
+
+**Testing broken implementation 6 **
+-------------------------------------
+
+Expected 0 while get 0 
+Expected 5 while get 5 
+Expected 5 while get 5 
+Expected 3 while get 3 
+Expected 1 while get 0 
+6
+
+**Testing broken implementation 7 **
+-------------------------------------
+
+Expected 0 while get 0 
+Expected 5 while get -1 
+112358
+
+**Testing broken implementation 8 **
+-------------------------------------
+
+Expected 0 while get 0 
+Expected 5 while get 1 
+112358
+
+**Testing broken implementation 9 **
+-------------------------------------
+
+Expected 0 while get 0 
+Expected 5 while get 1 
+112358
+
+**Testing correct implementation **
+-------------------------------------
+
+Expected 0 while get 0 
+Expected 5 while get 5 
+Expected 5 while get 5 
+Expected 3 while get 3 
+Expected 1 while get 1 
+Expected 2 while get 2 
+
+All test programs were handled correctly
+
+Overall Grade: PASSED

@@ -1,0 +1,79 @@
+#include <cstdio>
+#include <cstdlib>
+#include <iostream>
+#include <math.h>
+#include <assert.h>
+#include <exception>
+#include <function.h>
+
+
+int binarySearchForZero(Function<int, int> * f, int low, int high);
+
+class SinFunction : public Function<int, int> {
+public:
+  virtual int invoke(int arg) {
+    return 10000000 * (sin(arg/100000.0) - 0.5);
+  }
+};
+
+class linearFunction : public Function<int, int>{
+    public :
+    virtual int invoke(int arg){ return arg; }
+};
+
+class posFunction: public Function <int, int>{
+    public:
+    virtual int invoke (int arg){ return 1;}
+};
+class negFunction:public Function<int, int>{
+    public:
+    virtual int invoke(int arg){ return -1;}
+};
+
+class CountedIntFn : public Function<int,int>{
+protected:
+  unsigned remaining;
+  Function<int,int> * f;
+  const char * mesg;
+public:
+  CountedIntFn(unsigned n, Function<int,int> * fn, const char * m): remaining(n), f(fn), mesg(m) {}
+  virtual int invoke(int arg) {
+    if (remaining == 0) {
+      fprintf(stderr,"Too many function invocations in %s\n", mesg);
+      exit(EXIT_FAILURE);
+    }
+    remaining--;
+    return f->invoke(arg);
+  }
+
+};
+
+void check(Function<int,int> * f, int low, int high, int expected_ans,const char * mesg){
+    int max = 0;
+    if(high < low){
+        throw std::invalid_argument("The input is not valid.\n");
+    }
+    else if (high == low){
+        max = 1;
+    }
+    else if (high > low){
+        max = log2(high - low) + 1;
+    }
+    CountedIntFn tbCheck(max, f, "mesg");
+    int ans = binarySearchForZero(&tbCheck, low, high);
+    if(ans != expected_ans){
+        throw std::range_error("The answer is not right");
+    }
+}
+
+int main(){
+    SinFunction sf;
+    linearFunction lf;
+    posFunction pf;
+    negFunction nf;
+    check(&sf, 0, 157000, 52359,"Sinfunction");
+    check(&lf, -100, 100 , 99,"Linearfunction");
+    check(&pf, -100, 100 , -100 ,"Posfunction");
+    check(&nf, 0, 157000, 52359,"Negfunction");
+    return EXIT_SUCCESS;
+}

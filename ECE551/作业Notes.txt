@@ -1,0 +1,466 @@
+ch3
+1.  What is abstraction?  C
+
+    A.  The removal the non-essential parts of a program
+    B.  The act of moving from concrete examples to more general cases
+    C.  The separation of what something does from how it does it
+    D.  None of the above
+
+3.  What is a "struct"?  D
+
+    A.  A programming construct which changes the control flow of the
+        program 
+    B.  A programming construct which specifies special in"struct"ions.
+    C.  A programming construct which allows the programmer to change how
+        frames are con"struct"ed
+    D.  None of the above
+
+
+4.  What does "typedef" do?  B
+
+    A.  Defines a new type
+    B.  Makes another name for an existing type
+    C.  Creates a typed external file
+    D.  None of the above
+
+6.  Which of the following is true of "casting" a value? B
+
+    I.   It is done implicitly by the compiler
+    II.  The original value is left unmodified
+    III. You should do it rarely
+
+    A.  I and III
+    B.  I and II
+    C.  II and III
+    D.  All three of these
+8.  Which of the following is NOT determined by the type of a variable: C
+
+    A.  The number of bits needed to store it in memory
+    B.  How to interpret/operate on those bits
+    C.  The scope of the variable
+    D.  None of the above (all are determined by the type)
+
+
+9.  What does "hex" mean? C
+
+    A.  Base 4
+    B.  Base 8
+    C.  Base 16
+    D.  Base 64
+
+ch05
+
+5. What is in an object file? C
+
+A. The source code in an object-oriented programming language.
+B. Java Object Descriptors.
+C. Machine-executable instructions.
+D. A description of which objects are required to assemble the code.
+
+6. Which header file defines EXIT_SUCCESS and EXIT_FAILURE?  B
+
+A. stdio.h
+B. stdlib.h
+C. stdint.h
+D. unistd.h
+
+ch07
+
+5. What conditions are required of the data you are working on
+   to be able to ensure that a recursive algorithm terminates? D
+
+A. It must be only natural numbers
+B. It must be natural numbers or strings.
+C. It must be totally ordered.
+D. It must be well ordered.
+
+
+6. If your data meets the conditions described in the previous question,
+   how would you go about showing that your recursive algorithm always terminat\
+es?  								C
+
+A. Show that you always subtract a positive number from the argument
+   in every recursive call.
+B. Show that you have a base case in your algorithm.
+C. Show that every recursive call passes an argument which is "less than"
+   the argument received by the current call under the ordering you have chosen.
+D. Apply Godel's Incompleteness Theorem to the problem at hand.
+
+ch10
+
+1. Consider the following loop, which iterates over a string s,
+   but has a condition missing:                                                      E // 注意*s与s，不要搞混
+
+ while( /* SOMETHING MISSING */ ) {
+    //do some stuff with *s
+    s++;
+ }
+
+What condition should go in place of /* SOMETHING MISSING */ to
+make the loop iterate over every character of the string?
+
+A. s != NULL
+B. s != '\0'
+C. s != ""
+D. *s != NULL
+E. *s != '\0'
+F. *s != ""
+G. &s != NULL
+H. &s != '\0'
+I. &s != ""
+
+12. Which of the following is true this newer declaration of
+    myMatrix which is not true of the declaration used in
+    questions 7--9?   B
+
+A. myMatrix[0][0] is an lvalue.
+B. myMatrix[0] is an lvalue.
+C. myMatrix is an lvalue.
+D. myMatrix[0][0] is an rvalue.
+E. myMatrix[0] is an rvalue.
+F. myMatrix is an rvalue.
+G. None of the above.
+
+ch11
+8. When is it ok to use gets()? D
+
+A. When you are very sure what length string the user will type.
+B. When you only pass the result to atoi().
+C. When you know that stdin will be redirected from a file.
+D. When you want someone to hack your software, your boss to fire
+   you, and everyone to know you are a terribly incompetent programmer.
+
+ch13
+1. Writing a function is analogous to writing a:      C
+
+A. word
+B. sentence
+C. paragraph
+D. subsection
+E. section
+F. chapter
+G. book
+
+3. This limit on how many things the brain can work
+   on is important for designing programs because:          C
+
+A. Programmers love trivia
+B. It suggests the proper length of variable names.
+C. It suggests the proper size/complexity of functions.
+D. It suggests the number of files that we should divide our
+   code between.
+E. None of the above.
+
+
+4. Which of the following is NOT a guideline for documentation?  A
+
+A. Document every line.
+B. Describe each component.
+C. Do not comment the obvious
+D. Document large scale design.
+E. Explain the unexpected.
+F. More than one of these is NOT a guideline for documentation.
+G. None of the above (all are guidelines).
+
+6. Of the following, which are advantages of "Java Style" bracing?    D
+
+   1. Uses more whitespace
+   2. Consistency in brace placement
+   3. Helps avoid errors when modifying code
+
+A. 1, 2, and 3
+B. 1 and 2 
+C. 1 and 3
+D. 2 and 3
+E. 1 only
+F. 2 only
+G. 3 only
+H. None of these 
+
+7. No matter what style you choose, you should always:     B
+
+A. Place the braces for compound initializers on their own lines.
+B. Put braces around single statement bodies of if/while/for/etc.
+C. Write a comment after every brace
+D. Write a comment before every open brace, and after ever close brace
+
+9. In the roster example, what design/implementation strategy D
+   was used?
+
+A. Bottom-up design, bottom-up implementation.
+B. Bottom-up design, top-down implementation.
+C. Top-down design, bottom-up implementation.
+D. Top-down design, top-down implementation.
+
+10. When using this implementation strategy, programmers
+    have to think carefully to test early (rather than trying
+    to write the whole program then test).  How was early
+    testing accomplished in this roster example?                    D
+
+A. The authors wrote test stubs for the function they had
+   yet to write.
+B. The authors had sophisticated testing infrastructure
+   available from other projects.
+C. The authors stated that while testing was important,
+   they were skilled enough programmers to only test
+   at the end.
+D. The authors changed main to only read the input and
+   print it, rather than carrying out the later
+   steps in the algorithm.
+E. The authors used formal verification to prove their
+   code was correct, rather than testing.
+F. None of the above.
+
+ch14
+
+2. What does             A
+    extern "C" {
+      //declarations
+    }
+    mean?
+
+A. The names declared in "declarations" should not be mangled.
+B. The given declarations are from langauges external to C.
+C. The Makefile commands in "declarations" should be used to build
+   some external C programs.
+D. None of the above.
+
+5. Which of the following types is illegal? B
+
+A. int &
+B. int & *
+C. int * &
+D. const int &
+
+
+9. "Under the hood" a reference is..   A
+
+A. A pointer
+B. A struct
+C. A union
+D. A float (in C++03 or earlier, but a double in C++11 or later)
+
+ch15
+9. Suppose that class Abc has a copy constructor, a copying assignment
+   operator, and a default constructor.  Assume that 
+   abc1 has type Abc, and has been declared and intiailized previously.
+   Consider the following line of code:
+
+    Abc abc2 = abc1;
+
+   which of the members of Abc described above will be invoked
+   for this line of code?                A
+
+A.  The copy constructor.
+B.  The copying assignment operator.
+C.  The default constructor.
+D.  The default constructor, THEN the copying assignment operator.
+
+ch16
+
+5. How many std::strings are destroyed during one invocation of this  E
+   function:
+
+   void f(std::string s1, std::string s2) {
+     std::cout << s1.substr(3,5) << ":" << s2.substr(4,6) << "\n";
+   }
+
+A. 0
+B. 1
+C. 2
+D. 3
+E. 4
+F. 5
+G. 6
+H. 7
+I. 8
+
+8. A std::stringstream is a class which    C
+
+A. Lets you print only strings.
+B. Lets you read in only strings.
+C. Lets you format data into a string buffer, which can be retreived.
+D. Lets you string together multiple streams such that you can write to 
+   all of them at once with a single stream insertion operation.
+
+ch17
+
+2.  For which of the following may the compiler infer template  C
+    parameters during instantiation? 
+    A.  Templated classes and templated functions
+    B.  Templated classes only
+    C.  Templated functions only
+    D.  None of the above
+
+
+5.  Suppose you have                        H
+      template<typename T>
+      class X {
+        T v1;
+        T::t v2;
+        Y<T> v3;
+        Y<T>::z v4;
+      };
+    This attempt to declare templated class X is incorrect as it is
+    missing "typename" before the type names which are dependent
+    names. Which variables' declarations require "typename"?
+    A.  Only v1
+    B.  Only v2
+    C.  Only v3
+    D.  v1 and v2
+    E.  v1 and v3
+    F.  v1 and v4
+    G.  v2 and v3
+    H.  v2 and v4
+    I.  v3 and v4
+    J.  v1, v2, and v3
+    K.  v1, v2, and v4
+    L.  v2, v3, and v4
+    M.  All four variables (v1, v2, v3, and v4)
+//refrence: https://blog.csdn.net/vanturman/article/details/80269081
+
+11. How do you know if some operation invalidates a particular iterator on 
+    some data structure?          D
+    A.  Operations that delete from a data structure invalidate all of
+        its iterators (and only deletion operations invalidate
+        iterators). 
+    B.  Any operations that modify the contents of a data structure
+        invalidate all of its iterators.
+    C.  When an operation modifies a data structure, any iterator that
+        references the affected position(s) is invalidated.
+    D.  None of the above
+
+ch20 
+7. 
+
+Matrix multiply(const Matrix & m1, const Matrix & m2) {
+   Matrix ans(m1.rows, m2.columns);
+   assert(m1.columns == m2.rows);
+   for (int i = 0; i < ans.rows; i++) {
+      for (int j = 0; i < ans.columns; j++) {
+       int sum = 0;
+       for (int k = 0; k < m1columns; k++){
+         sum += m1[i][k] * m2[k][j];
+       }
+       ans[i][j] = sum;
+      }
+   }
+   return ans;
+}
+
+Here, N is the largest of m1.rows, m1.columns, m2.rows, and m2.columns:         F
+
+A. O(1)
+B. O(lg(N))
+C. O(N)
+D. O(N * lg(n))
+E. O(N^2)
+F. O(N^k) for some other k> 2 
+   [polynomial time, but worse than quadratic]
+G. O(2^N)
+H. O(N!)
+
+8. Imagine that there is an AribtraryInt class, which holds
+   an arbitrarily large int (any number of bits you want). Assume
+   this class overloads the relevant operators (++, <=, %, ==, <<),
+   as well as having a constructor which allows it to be initialized
+   from an int.
+
+  ArbitraryInt findSmallestDivisor(const ArbitraryInt& x) {
+     for(ArbitraryInt i = 2; i <= x; ++i) {
+       if (x % i == 0) {
+          return i;
+       }
+     }
+     std::cerr << x << " should be divisible by itself!\n";
+     abort();
+  }
+
+Here, N is the number of bits in x:    G
+
+A. O(1)
+B. O(lg(N))
+C. O(N)
+D. O(N * lg(n))
+E. O(N^2)
+F. O(N^k) for some other k> 2 
+   [polynomial time, but worse than quadratic]
+G. O(2^N)
+H. O(N!)
+
+ch21
+
+12. After doing correct action for question 11, which
+    iterators are invalidated?        E
+
+A. All iterators on all std::lists
+B. All iterators on all std::lists which are instantiated
+   on the same type for the template parameter.
+C. All iterators on the specific std::list from
+   which the element was removed.
+D. All iterators which reference the removed element,
+   or the element immediately before or after it.
+E. All iterators which reference the removed element.
+F. Only the particular iterator which was used to
+   remove the element (it)
+G. No iterators are invalidated
+H. None of the above
+
+ch25
+
+11. All of the following statements about adjacency list and
+    adjacency matrix are accurate except ... ?   B.   (My error choice has been C)
+
+A. Adjacency lists are more space-efficient and are preferred
+   if the graph is very sparse.
+B. An Adjacency list is much faster if we want to lookup for
+   specific edge between two vertices compared with adjacency matrix.
+C. It is slower for an adjacency matrix to add or delete a vertex compared
+   to an adjacency list.
+D. Adjacency lists are more efficient for iterating over all edges in the graph.
+
+13. Which of the following properties determine whether a graph is a tree? D
+
+A. It must be an undirected connected graph.
+B. There is no cycle in the graph.
+C. The number of edges equals to the number of vertices minus one.
+D. All of the above. 
+
+ch26
+
+
+7. What is the advantage of selection sort? C
+
+A. Good stability.
+B. Linear time complexity.
+C. Constant space complexity.
+D. Efficient on large-scale data sorting.
+
+8. Which of the following situation may result in the worst case in quick sort? D
+
+A. Each time we choose the first element as the pivot. 
+B. Each time we choose the last element as the pivot. 
+C. Each time we choose the middle element as the pivot. 
+D. Each time we choose the smallest or largest element as the pivot. 
+
+5. What does it mean for a sort to be "stable"?  C
+
+A. It is guaranteed to give the right answer
+B. Its running time does not depend on the values of the data
+C. Equal elements remain in the same order
+D. It has a steady job.
+E. None of the above.
+
+9. Which sorting algorithm is hard to parallelize? B
+
+A. Merge sort
+B. Heap sort
+C. Quick sort
+D. Odd-even sort
+
+10. Which sorting algorithm is not stable?  D
+
+A. Bubble sort
+B. Insertion sort
+C. Merge sort
+D. Quick sort
